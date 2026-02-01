@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tour</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Top image */
+    .top-image img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Topics container */
+    .regions {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Individual topic button */
+    .region-btn {
+        display: block;
+        width: 250px;
+        padding: 15px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        transition: 0.3s ease;
+    }
+
+    .region-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<!-- Top Image -->
+<div class="top-image">
+    <img src="images/worltour.jpg" alt="BTS Arirang">
+</div>
+
+<!-- Region Links -->
+<div class="regions">
+    <a href="asia.html" class="region-btn">Asia</a>
+    <a href="europe.html" class="region-btn">Europe</a>
+    <a href="north-america.html" class="region-btn">North America</a>
+    <a href="oceania.html" class="region-btn">Oceania</a>
+    <a href="latin-america.html" class="region-btn">South America</a>
+    
+</div>
+
+</body>
+</html>
