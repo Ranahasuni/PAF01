@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>album</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    img {
+      width: 500px;
+      height: 400px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-style: italic;
+      justify-content: center;
+    }
+    .content h2{
+        color:red;
+        font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image that triggers audio -->
+  <img src="images/band_image.jpg" alt="Click to play audio" id="audioImage">
+
+  <!-- Audio element -->
+  <audio id="myAudio">
+    <source src="images/message.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Content below the image -->
+  <div class="content">
+    <h2>ARIRANG</h2>
+    <p>
+    <b>BTS’s Arirang (2026)</b> marks the group’s highly anticipated comeback after a long hiatus, blending global pop with deep Korean heritage. Named after the iconic traditional folk song <b>Arirang</b>, the album reflects themes of longing, reunion, and perseverance, connecting BTS’s personal growth with shared cultural identity. Featuring 14 tracks across multiple physical editions, the release has already broken pre-order records and set the stage for the massive <b>Arirang World Tour</b>, showcasing BTS’s unmatched global influence. More than just music, <b>Arirang</b>symbolizes reunion, loyalty, and emotional resonance between BTS and their fans, ARMY, making it a milestone in both their career and K-pop history.
+    </p>
+  </div>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+    const image = document.getElementById('audioImage');
+
+    image.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+
+</body>
+</html>
