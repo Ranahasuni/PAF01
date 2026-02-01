@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arrirang</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Main wrapper */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        justify-content: center;
+        /* space between image and buttons */
+    }
+
+    .logo img {
+        width: 270px;   /* change size if needed */
+        height: auto;
+    }
+    .albumname{
+        display:flex;
+        justify-content: center;
+        color:gray;
+        font-size:x-large;
+    }
+
+    /* Buttons container */
+    .button-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    /* Button style */
+    .btn {
+        background: #fff;
+        border: none;
+        padding: 18px 40px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        transform: rotate(-2deg);
+        transition: 0.3s ease;
+    }
+
+    .btn::before,
+    .btn::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        background: #fff;
+        top: 0;
+    }
+
+    .btn::before {
+        left: -10px;
+        transform: rotate(8deg);
+    }
+
+    .btn::after {
+        right: -10px;
+        transform: rotate(-8deg);
+    }
+
+    .btn:hover {
+        transform: rotate(0deg) scale(1.05);
+    }
+    .bandname{
+        margin-top: 30px;
+       display:flex;
+       justify-content: center;
+       color:black;
+       font-weight: 300;
+       font-size: large;
+
+    }
+</style>
+
+</head>
+
+<body>
+<div>
+<div class="logo">
+    <img src="images/logo_arirang.jpg" alt="Logo">
+</div>
+<div class="albumname">
+    <h1 >ARIRANG</h1>
+</div>
+<div class="button-container">
+    <button class="btn" onclick="alert('Album clicked')">ALBUM</button>
+    <button class="btn" onclick="alert('Tour clicked')">TOUR</button>
+</div>
+<div class="bandname">
+    <h1 >BTS</h1>
+</div>
+
+</div>
+</body>
+</html>
